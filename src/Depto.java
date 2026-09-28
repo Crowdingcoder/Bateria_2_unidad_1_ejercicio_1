@@ -1,11 +1,10 @@
-public class Depto extends Persona{
+public class Depto {
     private int numero;
     private boolean bodega;
     private boolean estacionamiento;
     private Persona propietario;
 
-    public Depto(String nombre, int edad, boolean casado, String nacionalidad, int numero, boolean bodega, boolean estacionamiento, Persona propietario) {
-        super(nombre, edad, casado, nacionalidad);
+    public Depto(int numero, boolean bodega, boolean estacionamiento, Persona propietario) {
         this.numero = numero;
         this.bodega = bodega;
         this.estacionamiento = estacionamiento;
@@ -13,8 +12,7 @@ public class Depto extends Persona{
     }
 
     public Depto() {
-        super();
-        this.numero = 1234;
+        this.numero = 123;
         this.bodega = false;
         this.estacionamiento = false;
         this.propietario = new Persona();
